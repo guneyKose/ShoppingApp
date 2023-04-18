@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainFooterView" id="U6b-Vx-4bR" customClass="MainFooterView" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1D-Gl-ngW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfQ-fy-XUj">
+                            <rect key="frame" x="20" y="0.0" width="280" height="77"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="systemPurpleColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="goToCart:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="L3z-3r-ORF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PfQ-fy-XUj" firstAttribute="leading" secondItem="F1D-Gl-ngW" secondAttribute="leading" constant="20" id="6cc-jS-bJu"/>
+                        <constraint firstAttribute="bottom" secondItem="PfQ-fy-XUj" secondAttribute="bottom" id="EQW-Q6-RbD"/>
+                        <constraint firstAttribute="trailing" secondItem="PfQ-fy-XUj" secondAttribute="trailing" constant="20" id="cWa-nc-Wns"/>
+                        <constraint firstItem="PfQ-fy-XUj" firstAttribute="top" secondItem="F1D-Gl-ngW" secondAttribute="top" id="tY5-iz-TVY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="F1D-Gl-ngW" secondAttribute="bottom" id="1a9-Bo-ndy"/>
+                <constraint firstItem="F1D-Gl-ngW" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="Nqr-IQ-b2K"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="F1D-Gl-ngW" secondAttribute="trailing" id="SLN-Zg-6Lu"/>
+                <constraint firstItem="F1D-Gl-ngW" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="c4f-dF-mrt"/>
+            </constraints>
+            <connections>
+                <outlet property="totalAmountButton" destination="PfQ-fy-XUj" id="xFj-wm-upL"/>
+            </connections>
+            <point key="canvasLocation" x="125.19083969465649" y="-1.7605633802816902"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
