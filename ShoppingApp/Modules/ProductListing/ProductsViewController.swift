@@ -18,7 +18,7 @@ class ProductsViewController: UIViewController {
         self.setupUI()
         self.setupCollectionView()
         viewModel.fetchProducts { [weak self] success in
-            guard let self = self else { return }
+            guard let self else { return }
             self.productCollectionView.reloadData()
         }
     }

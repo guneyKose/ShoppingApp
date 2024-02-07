@@ -10,7 +10,7 @@ import UIKit
 
 final class ProductsViewModel {
     
-    private var baseURLString = "https://mocki.io/v1/6bb59bbc-e757-4e71-9267-2fee84658ff2"
+    private var baseURLString = ""
     
     lazy var productDetailStoryboard = UIStoryboard(name: "ProductDetail", bundle: nil)
     lazy var shoppingCartStoryboard = UIStoryboard(name: "ShoppingCart", bundle: nil)

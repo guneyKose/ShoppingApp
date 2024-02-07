@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class AppConfig {
+enum AppConfig {
     
     static var cart: [ProductModel] = [] {
         didSet {
